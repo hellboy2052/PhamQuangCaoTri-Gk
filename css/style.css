@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .red {
    color: red;
 }
@@ -6,4 +10,12 @@
 }
 .green {
    color:green;
+}
+.container{
+  width: 100%;
+  height: auto;
+}
+.box{
+  width: 100px;
+  height: 100px;
 }
