@@ -5,27 +5,50 @@ body{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background: #eeeeee;
 }
 .red {
-   color: red;
+   background: red;
 }
 .green {
-   color:green;
+
+   background: green;
 }
 .blue{
-  color: blue;
+  background: blue;
 }
 .yellow{
-  color:yellow;
+  background: yellow;
 }
 .container{
   width: 100%;
   height: auto;
+  display: inline-block;
 }
 .box{
-  width: 100px;
+  width: calc(100% / 4);
   height: 100px;
   font-size:20px;
+  float: left;
+}
+.story{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-story{
+  width: calc(100% / 3);
+}
+.box-story h1::before{
+  content: "";
+  height: 10px;
+  border-left: 3px solid blue;
+  margin-right: 10px;
+}
+.box-story:nth-child(even){
+  background: rgb(175, 173, 176);
 }
 
 .story{
